@@ -36,7 +36,7 @@ public class MainController {
                 .age(31)
                 .build();
 
-        UserDTO user4 = null;
+        //UserDTO user4 = null;
 
         // 리스트 생성
         List<UserDTO> dtoList = new ArrayList<>();
@@ -51,7 +51,7 @@ public class MainController {
         model.addAttribute("user1", user1);
         model.addAttribute("user2", user2);
         model.addAttribute("user3", user3);
-        model.addAttribute("user4", user4);
+        //model.addAttribute("user4", user4);
         model.addAttribute("dtoList", dtoList);
 
         return "/index";
