@@ -30,6 +30,7 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
+
   mail:
     host: smtp.gmail.com
     port: 587
@@ -41,7 +42,10 @@ spring:
           auth: true
           timeout: 5000
           starttls:
+            required: true
             enable: true
+          ssl:
+            trust: smtp.gmail.com
 
   security:
     user:
@@ -53,3 +57,4 @@ spring:
     multipart:
       location: upload
       max-file-size: 10MB
+
